@@ -1,0 +1,30 @@
+:root {
+  --primary-color: #dd491d;
+  --dark-color: #707070;
+  --light-color: #fbfbfb;
+  --black-color: #000;
+  --white-color: #fff;
+  --dark-gray: #333;
+  --light-gray: #eee;
+  --max-width: 1100px;
+}
+
+/* Items */
+.items-container {
+  grid-gap: 0.8rem;
+}
+
+.items-container .item .item-img {
+  border: 1px solid var(--light-gray);
+  height: 12rem;
+}
+
+#items-panel .items-categories {
+  grid-gap: 0.8remrem;
+}
+
+#items-panel .items-categories .category {
+  height: 8rem;
+}
+
+/* Pagination */

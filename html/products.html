@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monstat Apparel | Products</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile-large.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 420px)"
+      href="css/mobile-small.css"
+    />
+  </head>
+  <body>
+    <section class="wrapper">
+      <header id="main-nav">
+        <nav class="normal-screen-header">
+          <div class="container">
+            <img src="img/montast.png" alt="logo" class="logo" />
+            <ul>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="cart text-primary">
+              <i class="fa fa-shopping-cart"></i>
+              Cart(<span id="items-in-cart">0</span>)
+            </div>
+          </div>
+        </nav>
+
+        <nav class="mobile-header">
+          <div class="container">
+            <div class="search-cart-container">
+              <div class="mobile-search">
+                <i class="fa fa-search"></i>
+              </div>
+              <div class="mobile-cart">
+                <i class="fa fa-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="logo-container">
+              <img src="img/montast.png" alt="logo" class="logo" />
+            </div>
+
+            <div class="mobile-links">
+              <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+              </div>
+              <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Hoodies</a></li>
+                <li><a href="#">Round neck</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Track-Pants</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container">
+        <section id="main-section">
+          <!-- Search Area -->
+          <div class="search-area">
+            <div class="search">
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="Search..."
+                class="primary-input"
+              />
+              <button class="btn btn-primary">
+                <i class="fa fa-search"></i>
+              </button>
+            </div>
+          </div>
+
+          <!-- Side menu and items panel -->
+          <div class="main-content">
+            <aside id="side-menu">
+              <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Hoodies</a></li>
+                <li><a href="#">Round neck</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Track-Pants</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </aside>
+            <!-- Items Section -->
+            <section id="items-panel">
+              <div class="product-header">
+                <p>Products</p>
+                <select name="" id="" class="opt">
+                  <option value="">Featured</option>
+                  <option value="" selected>Best Selling</option>
+                  <option value="">Alphabetically A-Z</option>
+                  <option value="">Alphabetically Z-A</option>
+                  <option value="">Price, low to high</option>
+                  <option value="">Price, high to low</option>
+                  <option value="">Date, old to new</option>
+                  <option value="">Date, new to old</option>
+                </select>
+              </div>
+              <div class="items-container">
+                <div class="item">
+                  <div class="item-img"></div>
+
+                  <p class="item-desc">Kheleke - Round Neck</p>
+                  <p class="item-price">M 179.95</p>
+                </div>
+                <div class="item">
+                  <div class="item-img"></div>
+
+                  <p class="item-desc">Kheleke - Round Neck</p>
+                  <p class="item-price">M 179.95</p>
+                </div>
+                <div class="item">
+                  <div class="item-img"></div>
+
+                  <p class="item-desc">Kheleke - Round Neck</p>
+                  <p class="item-price">M 179.95</p>
+                </div>
+                <div class="item">
+                  <div class="item-img"></div>
+
+                  <p class="item-desc">Kheleke - Round Neck</p>
+                  <p class="item-price">M 179.95</p>
+                </div>
+                <div class="item">
+                  <div class="item-img"></div>
+
+                  <p class="item-desc">Kheleke - Round Neck</p>
+                  <p class="item-price">M 179.95</p>
+                </div>
+                <div class="item">
+                  <div class="item-img"></div>
+
+                  <p class="item-desc">Kheleke - Round Neck</p>
+                  <p class="item-price">M 179.95</p>
+                </div>
+              </div>
+              <!-- pagination -->
+              <div class="pagination">
+                <button class="btn btn-secondary">
+                  <i class="fas fa-angle-double-left"></i> &nbsp;&nbsp;Prev
+                </button>
+                <div class="pages">
+                  <div class="page">1</div>
+                  <div class="page current-page">2</div>
+                  <div class="page">3</div>
+                  <div class="page">...</div>
+                  <div class="page">10</div>
+                </div>
+                <button class="btn btn-secondary">
+                  Next &nbsp;&nbsp;<i class="fas fa-angle-double-right"></i>
+                </button>
+              </div>
+
+              <div class="small-mobile-pagination">
+                <button class="btn btn-secondary">
+                  <i class="fas fa-angle-double-left"></i>
+                </button>
+                <div class="pages">
+                  <div class="page">1</div>
+                  <div class="page current-page">2</div>
+                  <div class="page">3</div>
+                  <div class="page">...</div>
+                  <div class="page">10</div>
+                </div>
+                <button class="btn btn-secondary">
+                  <i class="fas fa-angle-double-right"></i>
+                </button>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- Footer section -->
+        <footer id="footer">
+          <div class="footer-info">
+            <div class="footer-links">
+              <p class="lead">Links</p>
+              <p><a href="#">Location</a></p>
+              <p><a href="#">About Us</a></p>
+              <p><a href="3">Contact Us</a></p>
+            </div>
+            <div class="footer-subscribe">
+              <p class="lead">Be in the know</p>
+              <p>Promotions, new products and sales. Directly to your inbox.</p>
+
+              <div class="subscribe">
+                <form action="">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email..."
+                    class="primary-input"
+                  />
+                  <button type="submit" class="btn btn-primary">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p>Copyright &copy; 2020, Monstat</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
