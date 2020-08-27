@@ -4,19 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>montast</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
         integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
         crossorigin="anonymous" />
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile-large.css" />
-    <link rel="stylesheet" media="screen and (max-width: 420px)" href="css/mobile-small.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" media="screen and (max-width: 768px)" href="/css/mobile-large.css" />
+    <link rel="stylesheet" media="screen and (max-width: 420px)" href="/css/mobile-small.css" />
+    <title>montast</title>
+
 </head>
 
 <body>
-    {{> _navbar}}
-    {{{body}}}
+    <section class="wrapper">
+        {{> _navbar}}
+        {{{body}}}
+        {{> _footer}}
+    </section>
+
 </body>
 
 </html>

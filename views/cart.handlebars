@@ -1,0 +1,71 @@
+<div class="container">
+    <section id="main-section">
+        <!-- Side menu and items panel -->
+        {{> _sidemenu}}
+        <!-- Single Item Section -->
+        <section id="cart-panel">
+            <p class="cart-heading">Home › Your Shopping Cart</p>
+            <div class="cart-items-container">
+                <table class="tbl-cart-items">
+                    <thead>
+                        <tr class="tbl-head">
+                            <th>Product</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="tbl-data">
+                            <td class="info">
+                                <div class="image"></div>
+
+                                <div class="item-info">
+                                    <p>Khaleke T-Shirt</p>
+                                    <p><small>Black / Small</small></p>
+                                    <button class="btn btn-secondary">Remove</button>
+                                </div>
+                            </td>
+                            <td>M 169.95</td>
+                            <td>
+                                <input type="number" name="quantity" id="quantity" value="1" min="1" />
+                            </td>
+                            <td>M 169.95</td>
+                        </tr>
+                        <tr class="tbl-data">
+                            <td class="info">
+                                <div class="image"></div>
+
+                                <div class="item-info">
+                                    <p>Khaleke T-Shirt</p>
+                                    <p><small>Black / Small</small></p>
+                                    <button class="btn btn-secondary">Remove</button>
+                                </div>
+                            </td>
+                            <td>M 169.95</td>
+                            <td>
+                                <input type="number" name="quantity" id="quantity" value="1" min="1" />
+                            </td>
+                            <td>M 169.95</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <!-- Checkout -->
+
+                <div class="checkout">
+                    <div class="checkout-info">
+                        <h4>Subtotal <span id="subtotal"></span> &nbsp&nbsp M 423.99</span></h4>
+                        <p><em>Delivery cost calculated at checkout</em></p>
+                    </div>
+                </div>
+                <div class="checkout-btn">
+                    <button class="btn btn-secondary">CONTINUE SHOPPING</button>
+                    <button class="btn btn-primary btn-checkout">CHECK OUT</button>
+                </div>
+
+            </div>
+        </section>
+</div>
+</section>
+</div>
