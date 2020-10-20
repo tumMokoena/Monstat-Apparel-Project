@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monstat Apparel | Users</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+    integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="css/style.css" />
+  <link
+    rel="stylesheet"
+    media="screen and (max-width: 768px)"
+    href="css/mobile-large.css"
+  />
+  <link
+    rel="stylesheet"
+    media="screen and (max-width: 420px)"
+    href="css/mobile-small.css"
+  />
+
+</head>
+<body>
+    <section class="wrapper">
+        <header id="main-nav">
+            <nav class="normal-screen-header">
+              <div class="container">
+                <img src="img/montast.png" alt="logo" class="logo" />
+                <ul>
+                  <li><a href="#">Location</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">FAQ</a></li>
+                </ul>
+                <div class="cart">
+                  <div class="search-section">
+                    <i class="fas fa-search"></i>
+                  </div>
+                    <div class="cart-details">
+                      <a href="#">
+                        <i class="fa fa-shopping-cart"></i>
+                        CART
+                      </a>
+                    </div>
+                    <div class="signin">
+                      <a href="signin.html">
+                        <i class="fas fa-user"></i>
+                        SIGN IN
+                      </a>
+                    </div>
+                  </div>
+              </div>
+            </nav>
+            <!-- Mobile nav -->
+            <nav class="mobile-header">
+              <div class="container">
+                <div class="search-cart-container">
+                  <div class="mobile-search">
+                    <i class="fa fa-search"></i>
+                  </div>
+                  <div class="mobile-cart">
+                    <div class="items-count">
+                      <small class="count">0</small>
+                    </div>
+                    <i class="fa fa-shopping-cart"></i>
+                  </div>
+                </div>
+                <div class="logo-container">
+                  <img src="img/montast.png" alt="logo" class="logo" />
+                </div>
+    
+                <div class="mobile-links">
+                  <div class="menu-icon">
+                    <i class="fa fa-bars fa-2x"></i>
+                  </div>
+                  <ul>
+                    <li><a href="#" class="current">Home</a></li>
+                    <li><a href="#">Hoodies</a></li>
+                    <li><a href="#">Round neck</a></li>
+                    <li><a href="#">T-Shirts</a></li>
+                    <li><a href="#">Track-Pants</a></li>
+                    <li><a href="#">Accessories</a></li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </header>
+
+          <div class="container">
+              <section id="main-section" class="min-height">
+                <div class="user-info">
+                    <h1>USERS</h1>
+                    <div class="user-details">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>NAME</th>
+                                    <th>EMAIL</th>
+                                    <th>ADMIN</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>877fg8f7gff689fhffk88</td>
+                                    <td>Admin User</td>
+                                    <td>admin@example.com</td>
+                                    <td><i class="fas fa-check tick"></i></td>
+                                    <td>
+                                        <a href="edituser.html">
+                                            <span class="edit"><i class="fas fa-edit"></i></span>
+                                        </a>
+                                        <a href="">
+                                            <span class="btn delete"><i class="fas fa-trash-alt"></i></span>
+                                        </a
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>877fg8f7gff689fhffk88</td>
+                                    <td>John Doe</td>
+                                    <td>john@example.com</td>
+                                    <td><i class="fas fa-times cross"></i></td>
+                                    <td>
+                                        <a href="edituser.html">
+                                            <span class="edit"><i class="fas fa-edit"></i></span>
+                                        </a>
+                                        <a href="">
+                                            <span class="btn delete"><i class="fas fa-trash-alt"></i></span>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    
+                </div>
+
+              </section>
+              <!-- Footer section -->
+              <footer id="footer">
+                  <div class="footer-copyright">
+                    <p>Copyright &copy; 2020, Monstat</p>
+                  </div>
+                </footer>
+          </div>
+    </section>
+</body>
+</html>

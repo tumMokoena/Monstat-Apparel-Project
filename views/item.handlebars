@@ -4,10 +4,12 @@
         {{> _sidemenu}}
         <!-- Single Item Section -->
         <section id="items-panel" class="signle-item-panel">
-            <p class="item-heading">Home › Khaleke T-Shirt - Black</p>
+            <p class="item-heading">Home › {{products.tittle}}</p>
             <div class="single-item-container">
                 <div class="single-item-images">
-                    <div class="item-img-preview"></div>
+                    <div class="item-img-preview">
+                        <img src="/{{products.coverImageUrl}}" alt="">
+                    </div>
                     <div class="item-images">
                         <div class="other-item-img"></div>
                         <div class="other-item-img"></div>
@@ -17,26 +19,28 @@
                     </div>
                 </div>
                 <div class="single-item-info">
-                    <h3>Khaleke T-Shirt - Black</h3>
+                    <h3>{{products.tittle}} - {{products.category}}</h3>
                     <p class="single-item-price">
-                        <span class="text-primary">M169.95</span> <s>M185.96</s>
+                        <span class="text-primary">M{{products.price}}</span> <s>M185.96</s>
                     </p>
 
                     <div class="item-color-size">
                         <div class="color">
                             <label for="item-color"><small>Colour</small></label>
                             <select name="color" id="color" class="opt">
-                                <option value="red">Red</option>
-                                <option value="blck">Black</option>
+
+                                {{#each products.colors}}
+                                <option value="red">{{this}}</option>
+                                {{/each}}
+
                             </select>
                         </div>
                         <div class="size">
                             <label for="item-size"><small>Size</small></label>
                             <select name="size" id="size" class="opt">
-                                <option value="small">Small</option>
-                                <option value="medium">Medium</option>
-                                <option value="large">Large</option>
-                                <option value="x-large">X-Large</option>
+                                {{#each products.size}}
+                                <option value="red">{{this}}</option>
+                                {{/each}}
                             </select>
                         </div>
                     </div>

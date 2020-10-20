@@ -1,4 +1,8 @@
-const productSchema = new productSchema({
+const mongoose = require('mongoose');
+
+// const getDb = require('../config/dbConn').getDb;
+
+const productSchema = new mongoose.Schema({
   tittle: {
     type: String,
     required: [true, 'Please enter product title'],
@@ -14,7 +18,7 @@ const productSchema = new productSchema({
   },
   coverImageUrl: {
     type: String,
-    required: [true, 'Please provide a valid image'],
+    required: [true, 'Please provide an image url'],
   },
   featuredImagesUrl: {
     type: [String],
@@ -34,9 +38,16 @@ const productSchema = new productSchema({
   },
   colors: {
     type: [String],
-    required: [true, 'Please enter product sizes'],
+    required: [true, 'Please enter product color'],
     enum: ['Black', 'Blue', 'Orange', 'Maroon', 'White', 'Pink', 'Other'],
   },
+  createdAt: {
+    type: Date,
+    default: Date.now
+  }
+
 });
 
-module.exports = productSchema;
+const Product = mongoose.model('products', productSchema);
+
+module.exports = Product;

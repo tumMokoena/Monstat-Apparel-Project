@@ -15,75 +15,60 @@
         <section id="items-panel">
             <p class="items-heading">Featured categories</p>
             <div class="items-container">
-                <div class="item">
-                    <a href="/shop/v1/products/1">
-                        <div class="item-img"></div>
 
-                        <p class="item-desc">Kheleke - Round Neck</p>
-                        <p class="item-price">M 179.95</p>
+                {{#each products}}
+                <div class="item">
+                    <a href="/shop/v1/products/{{this._id}}">
+                        <div class="item-img">
+                            <img src="/{{this.coverImageUrl}}" alt="">
+                        </div>
+
+                        <p class="item-desc">{{this.tittle}} - {{this.category}}</p>
+                        <p class="item-price">M {{this.price}}</p>
                     </a>
                 </div>
-                <div class="item">
-                    <a href="/shop/v1/products/1">
-                        <div class="item-img"></div>
-
-                        <p class="item-desc">Kheleke - Round Neck</p>
-                        <p class="item-price">M 179.95</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/shop/v1/products/1">
-                        <div class="item-img"></div>
-
-                        <p class="item-desc">Kheleke - Round Neck</p>
-                        <p class="item-price">M 179.95</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/shop/v1/products/1">
-                        <div class="item-img"></div>
-
-                        <p class="item-desc">Kheleke - Round Neck</p>
-                        <p class="item-price">M 179.95</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/shop/v1/products/1">
-                        <div class="item-img"></div>
-
-                        <p class="item-desc">Kheleke - Round Neck</p>
-                        <p class="item-price">M 179.95</p>
-                    </a>
-                </div>
-                <div class="item">
-                    <a href="/shop/v1/products/1">
-                        <div class="item-img"></div>
-
-                        <p class="item-desc">Kheleke - Round Neck</p>
-                        <p class="item-price">M 179.95</p>
-                    </a>
-                </div>
+                {{else}}
+                <p>No products found</p>
+                {{/each}}
             </div>
             <!-- Categories -->
             <div class="items-categories">
-                <div class="category">
-                    <p>Hoodies</p>
-                </div>
-                <div class="category">
-                    <p>Hats</p>
-                </div>
-                <div class="category">
-                    <p>Caps</p>
-                </div>
-                <div class="category">
-                    <p>Track Pants</p>
-                </div>
-                <div class="category">
-                    <p>Round Neck</p>
-                </div>
-                <div class="category">
-                    <p>T-Shirts</p>
-                </div>
+                <a href="/shop/v1/products?category=Hoddy">
+
+                    <div class="category">
+                        <p>Hoodies</p>
+                    </div>
+                </a>
+                <a href="/shop/v1/products?category=Hats">
+
+                    <div class="category">
+                        <p>Hats</p>
+                    </div>
+                </a>
+                <a href="/shop/v1/products?category=Caps">
+
+                    <div class="category">
+                        <p>Caps</p>
+                    </div>
+                </a>
+                <a href="/shop/v1/products?category=Track-pants">
+
+                    <div class="category">
+                        <p>Track Pants</p>
+                    </div>
+                </a>
+                <a href="/shop/v1/products?category=Round-neck">
+
+                    <div class="category">
+                        <p>Round Neck</p>
+                    </div>
+                </a>
+                <a href="/shop/v1/products?category=T-shirts">
+
+                    <div class="category">
+                        <p>T-Shirts</p>
+                    </div>
+                </a>
             </div>
         </section>
 </div>

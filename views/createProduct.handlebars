@@ -1,0 +1,108 @@
+<div class="container">
+    <section id="main-section">
+        <a href="users.html" class="btn go-back">GO BACK</a>
+        <div class="signin-content">
+            <div class="signin-info">
+                <h1>CREATE PRODUCT</h1>
+
+                <div class="err-msg-container">
+                    Error
+                </div>
+                <form action="/admin/v1/product" method="POST" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <label for="productname">Product Name</label>
+                        <input type="text" name="tittle" id="productname" placeholder="Sample name" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="price">Price</label>
+                        <input type="text" name="price" id="price" placeholder="Product price" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="category">Category</label>
+                        <select name="category" id="category">
+                            <option value="Hoddy">Hoodies</option>
+                            <option value="Round-neck">Round neck</option>
+                            <option value="T-shirt">T-Shirts</option>
+                            <option value="Track-pant">Track-Pants</option>
+                            <option value="Hat">Hat</option>
+                            <option value="Cap">Cap</option>
+                        </select>
+                    </div>
+
+                    <label for="colors" class="size-label">Colors</label>
+                    <div class="sizes">
+                        <div class="input-group">
+                            <input type="checkbox" name="black" id="black"> Black
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="blue" id="blue"> Blue
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="orange" id="orange"> Orange
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="white" id="white"> White
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="pink" id="pink"> Pink
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="maroon" id="maroon"> Maroon
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="other" id="other"> Other
+                        </div>
+                    </div>
+
+                    <div class="form-group url">
+                        <label for="img-url">Cover Image</label>
+                        <input type="text" id="img-url" placeholder="Enter image url" />
+                        <label class="file">
+                            <input type="file" name="coverImageUrl" id="file" aria-label="File browser example">
+                            <span class="file-custom"></span>
+                        </label>
+
+                    </div>
+                    <div class="form-group url">
+                        <label for="img-url">Other Images</label>
+
+                        <label class="file">
+                            <input type="file" name="featuredImagesUrl" id="file" multiple="multiple" />
+                            <span class="file-custom"></span>
+                        </label>
+
+                    </div>
+
+                    <label for="sizes" class="size-label">Sizes</label>
+                    <div class="sizes">
+                        <div class="input-group">
+                            <input type="checkbox" name="small" id="small"> S
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="medium" id="medium"> M
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="large" id="large"> L
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="xlarge" id="x-large"> XL
+                        </div>
+                        <div class="input-group">
+                            <input type="checkbox" name="xxlarge" id="xx-large"> XXL
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Count In Stock</label>
+                        <input type="number" id="stockcount" placeholder="0" required />
+                    </div>
+
+                    <div class="form-group">
+                        <label for="desc">Description</label>
+                        <input type="text" id="desc" placeholder="Product description" required />
+                    </div>
+                    <input type="submit" value="Create" class="btn btn-primary">
+                </form>
+            </div>
+        </div>

@@ -6,6 +6,7 @@
   --white-color: #fff;
   --dark-gray: #333;
   --light-gray: #eee;
+  --err-color: #f8dddc;
   --max-width: 1100px;
 }
 /* Reset */
@@ -139,11 +140,20 @@ a {
 }
 
 #main-nav .cart {
+  display: flex;
   font-weight: 600;
   cursor: pointer;
 }
 
-#main-nav .cart:hover {
+#main-nav .cart .cart-details {
+  margin-right: 1.4rem;
+}
+
+#main-nav .search-section {
+  margin-right: 1.4rem;
+}
+
+#main-nav .cart > *:hover {
   opacity: 85%;
 }
 
@@ -173,6 +183,7 @@ a {
 .search-area input {
   width: 18rem;
 }
+
 /* Main section */
 #main-section {
   width: 100%;
@@ -228,6 +239,10 @@ a {
 .items-container .item .item-img {
   border: 1px solid var(--light-gray);
   height: 18rem;
+}
+.item-img img {
+  width: 100%;
+  height: 100%;
 }
 
 .items-container .item p {
@@ -353,6 +368,57 @@ a {
   text-align: center;
 }
 
+/* Sign IN */
+
+.signin-content {
+  display: flex;
+  justify-content: center;
+  min-height: 70vh;
+}
+.signin-info {
+  flex-basis: 35rem;
+}
+.signin-info h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.signin-info .form-group {
+  margin-top: 1.2rem;
+}
+.signin-info .form-group input,
+.signin-info .form-group select {
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  padding: 0.8rem 1.2rem;
+  background: #f7f7f9;
+}
+
+.signin-info .form-group input:focus {
+  outline-color: var(--primary-color);
+}
+
+.signin-info input[type='submit'] {
+  margin: 2rem 0 1.4rem 0;
+  padding: 0.6rem 1.2rem;
+  border-radius: 4px;
+}
+
+.signin-info a {
+  text-decoration: underline;
+}
+
+.signin-info a:hover {
+  color: var(--primary-color);
+}
+
+.err-msg-container {
+  background: var(--err-color);
+  padding: 0.6rem 1.2rem;
+}
+
 /* Shopping Cart */
 #cart-panel {
   flex: 2;
@@ -369,6 +435,10 @@ a {
   border: 0;
   border-collapse: separate;
   border-spacing: 0 1.2rem;
+}
+
+#cart-panel .mobile-cart-items {
+  display: none;
 }
 
 #cart-panel .tbl-cart-items thead tr th {
@@ -501,6 +571,350 @@ a {
 
 .small-mobile-pagination {
   display: none;
+}
+
+/* Checkout */
+#checkout-panel {
+  display: flex;
+  width: 100%;
+  color: var(--dark-gray);
+}
+.mobile-cart-summary {
+  display: none;
+}
+
+#checkout-panel .checkout-details {
+  flex: 1;
+  padding-right: 2rem;
+  border-right: 1px solid var(--light-gray);
+}
+
+#checkout-panel .checkout-details a {
+  font-size: 1rem;
+}
+
+#checkout-panel .checkout-details p {
+  font-size: 1.2rem;
+  margin-top: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+
+#checkout-panel .checkout-details .form-group {
+  margin-bottom: 1rem;
+}
+
+#checkout-panel .checkout-details label {
+  display: block;
+}
+
+#checkout-panel .checkout-details .form-group input {
+  width: 100%;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  padding: 0.8rem;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+#checkout-panel .checkout-details .form-group select {
+  width: 100%;
+  background: none;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+  padding: 0.8rem 0.8rem;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+#checkout-panel .checkout-details input:focus,
+#checkout-panel .checkout-details .form-group select:focus {
+  outline-color: var(--primary-color);
+}
+
+#checkout-panel .checkout-details .form-checkbox {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  margin-top: 0.6rem;
+}
+
+#checkout-panel .checkout-details .form-checkbox input {
+  margin-right: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+}
+
+#checkout-panel .checkout-details .form-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+#checkout-panel .checkout-details .form-buttons a.btn {
+  padding: 0.8rem 1.2rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-family: 'Nunito', sans-serif;
+}
+
+#checkout-panel .checkout-items {
+  flex: 1;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+.checkout-single-item {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+}
+.checkout-item-img-container {
+  position: relative;
+  padding-top: 0.6rem;
+  padding-right: 0.6rem;
+}
+
+.checkout-item-img {
+  width: 5.4rem;
+  height: 5.4rem;
+  border: 1px solid var(--light-gray);
+  border-radius: 4px;
+}
+
+.checkout-item-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: var(--white-color);
+  background: var(--primary-color);
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  top: 0;
+  right: 0;
+  opacity: 85%;
+}
+.checkout-item-info {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  align-content: start;
+  margin-left: 0.6rem;
+}
+
+.checkout-item-price {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  font-size: 1.1rem;
+}
+
+.items-totals {
+  padding: 1rem 0;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+  border-top: 1px solid var(--light-gray);
+  border-bottom: 1px solid var(--light-gray);
+}
+
+.checkout-items .items-totals .subtotal,
+.checkout-items .total-payment,
+.checkout-items .items-totals .delivery-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.checkout-items .items-totals {
+  font-size: 1.1rem;
+}
+
+.checkout-items .total-payment {
+  color: #000;
+}
+
+.checkout-items .total-payment p {
+  font-size: 1.3rem;
+}
+
+.checkout-items .total-payment small {
+  font-size: 0.8rem;
+}
+
+/* Checkout Payment */
+#checkout-panel .checkout-info {
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+#checkout-panel .checkout-info .details {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--light-gray);
+  padding: 0.8rem 0;
+}
+
+#checkout-panel .checkout-info .details:last-child {
+  border: none;
+  padding-bottom: 0;
+}
+
+#checkout-panel .checkout-info .details:first-child {
+  padding-top: 0;
+}
+#checkout-panel .checkout-details p {
+  margin: 0;
+}
+#checkout-panel .checkout-info .details p {
+  flex: 1;
+}
+
+#checkout-panel .checkout-info .details p:nth-child(2) {
+  flex: 2;
+}
+#checkout-panel .checkout-info .details p:nth-child(3) {
+  text-align: end;
+}
+
+#checkout-panel .checkout-details .p-heading {
+  margin-top: 1rem;
+}
+
+.payment-card-details {
+  border: 1px solid var(--light-gray);
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.payment-card-details h3 {
+  border-bottom: 1px solid var(--light-gray);
+  padding: 0.6rem;
+}
+
+.payment-card-details form {
+  padding: 1rem;
+  background: rgba(204, 202, 202, 0.089);
+}
+
+.payment-card-details .group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.payment-card-details .group input[name='expirationdate'] {
+  margin-right: 1rem;
+}
+
+/* Users */
+.user-info h1 {
+  font-size: 2rem;
+}
+
+.user-details {
+  width: 100%;
+  margin-top: 1.2rem;
+}
+
+.user-details table {
+  width: 100%;
+}
+.user-details table,
+.user-details table tr,
+.user-details table th,
+.user-details table td {
+  border: 1px solid var(--light-gray);
+  border-collapse: collapse;
+}
+
+.user-details table th {
+  padding: 0.4rem 0.7rem;
+}
+
+.user-details table td {
+  padding: 0.7rem;
+}
+
+.user-details table tr {
+  text-align: left;
+}
+
+.user-details table tbody tr:nth-child(odd) {
+  background: #f7f7f9;
+}
+
+.user-details .edit {
+  background: var(--white-color);
+  padding: 0.4rem 0.8rem;
+}
+
+.user-details .delete i {
+  color: var(--white-color);
+}
+
+.user-details .delete {
+  background: var(--primary-color);
+  padding: 0.4rem 0.8rem;
+}
+
+.cross {
+  color: red;
+}
+
+.tick {
+  color: green;
+}
+
+.min-height {
+  min-height: 70vh;
+}
+
+/* Edit User */
+
+.mark-as-admin {
+  margin-top: 1rem;
+}
+
+.go-back {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  background: #f7f7f9;
+}
+
+/* Prouct List */
+
+.btn-create-product {
+  padding: 0.4rem 1rem;
+  border-radius: 4px;
+}
+
+/* Create Product */
+.url input {
+  font-weight: bold;
+}
+.url input:focus {
+  outline: none;
+}
+
+.sizes {
+  display: flex;
+}
+
+.size-label {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.sizes .input-group {
+  margin-right: 2rem;
 }
 
 /* footer */

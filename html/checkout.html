@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Monstat Apparel | Checkout - Information</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 768px)"
+      href="css/mobile-large.css"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 420px)"
+      href="css/mobile-small.css"
+    />
+  </head>
+  <body>
+    <section class="wrapper">
+      <header id="main-nav">
+        <nav class="normal-screen-header">
+          <div class="container">
+            <img src="img/montast.png" alt="logo" class="logo" />
+            <ul>
+              <li><a href="#">Location</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">FAQ</a></li>
+            </ul>
+            <div class="cart text-primary">
+              <i class="fa fa-shopping-cart"></i>
+              Cart(<span id="items-in-cart">0</span>)
+            </div>
+          </div>
+        </nav>
+        <!-- Mobile nav -->
+        <nav class="mobile-header">
+          <div class="container">
+            <div class="search-cart-container">
+              <div class="mobile-search">
+                <i class="fa fa-search"></i>
+              </div>
+              <div class="mobile-cart">
+                <div class="items-count">
+                  <small class="count">0</small>
+                </div>
+                <i class="fa fa-shopping-cart"></i>
+              </div>
+            </div>
+            <div class="logo-container">
+              <img src="img/montast.png" alt="logo" class="logo" />
+            </div>
+
+            <div class="mobile-links">
+              <div class="menu-icon">
+                <i class="fa fa-bars fa-2x"></i>
+              </div>
+              <ul>
+                <li><a href="#" class="current">Home</a></li>
+                <li><a href="#">Hoodies</a></li>
+                <li><a href="#">Round neck</a></li>
+                <li><a href="#">T-Shirts</a></li>
+                <li><a href="#">Track-Pants</a></li>
+                <li><a href="#">Accessories</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
+
+      <div class="mobile-cart-summary">
+        <p><i class="fa fa-shopping-cart"></i> &nbsp; Show order summary</p>
+      </div>
+
+      <div class="container">
+        <section id="main-section">
+          <!-- Search Area -->
+
+          <!-- Side menu and items panel -->
+          <div class="main-content">
+            <!-- Items Section -->
+            <section id="checkout-panel">
+              <div class="checkout-details">
+                <div class="links-group">
+                  <a href="#">Cart</a> &nbsp;>&nbsp;
+                  <a href="#" class="current">Information</a> &nbsp;>&nbsp;
+                  <a href="#">Payment</a>
+                </div>
+
+                <p>Contact Information</p>
+                <form action="">
+                  <div class="form-group">
+                    <input
+                      type="phone"
+                      id="phonenumber"
+                      placeholder="Phone Number"
+                    />
+                  </div>
+                  <p>Delevery Address</p>
+                  <div class="form-group">
+                    <input
+                      type="text"
+                      id="firstname"
+                      placeholder="First name"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="lastname" placeholder="Last name" />
+                  </div>
+                  <div class="form-group">
+                    <input type="text" id="address" placeholder="Address" />
+                  </div>
+                  <div class="form-group">
+                    <select name="district" id="district" class="opt">
+                      <option value="maseru">Maseru</option>
+                      <option value="maseru">Berea</option>
+                      <option value="maseru">Leribe</option>
+                      <option value="maseru">Botha-Buthe</option>
+                      <option value="maseru">Thaba-Tseka</option>
+                      <option value="maseru">Mokhotlong</option>
+                      <option value="maseru">Quthing</option>
+                      <option value="maseru">Qacha's nek</option>
+                      <option value="maseru">Mohale's Hoek</option>
+                      <option value="maseru">Mafeteng</option>
+                    </select>
+                  </div>
+
+                  <div class="form-checkbox">
+                    <input
+                      type="checkbox"
+                      name="savedetails"
+                      id="savedetails"
+                    />
+                    Save this information for next time
+                  </div>
+
+                  <div class="form-buttons">
+                    <a href="cart.html" class="text-primary">
+                      <i class="fa fa-angle-left"></i>&nbsp; Return to cart
+                    </a>
+                    <a href="#" class="btn btn-primary">Continue to delivery</a>
+                  </div>
+                </form>
+              </div>
+              <div class="checkout-items">
+                <div class="checkout-single-item">
+                  <div class="checkout-item-img-container">
+                    <div class="checkout-item-img"></div>
+                    <div class="checkout-item-count">1</div>
+                  </div>
+                  <div class="checkout-item-img-container"></div>
+                  <div class="checkout-item-info">
+                    <h4>Kheleke - Round Neck</h4>
+                    <p><small>Black / Small</small></p>
+                  </div>
+                  <div class="checkout-item-price"><h4>M 169.96</h4></div>
+                </div>
+                <div class="checkout-single-item">
+                  <div class="checkout-item-img-container">
+                    <div class="checkout-item-img"></div>
+                    <div class="checkout-item-count">1</div>
+                  </div>
+                  <div class="checkout-item-img-container"></div>
+                  <div class="checkout-item-info">
+                    <h4>Kheleke - Round Neck</h4>
+                    <p><small>Black / Small</small></p>
+                  </div>
+                  <div class="checkout-item-price"><h4>M 169.96</h4></div>
+                </div>
+
+                <div class="items-totals">
+                  <div class="subtotal">
+                    <p>Subtotal</p>
+                    <h4>M 169.96</h4>
+                  </div>
+                  <div class="delivery-total">
+                    <p>Delivery</p>
+                    <h4>M 53.96</h4>
+                  </div>
+                </div>
+                <div class="total-payment">
+                  <p>Total</p>
+                  <h2><small>MALUTI / ZAR </small> &nbsp; M 245.99</h2>
+                </div>
+              </div>
+            </section>
+          </div>
+        </section>
+        <!-- Footer section -->
+        <footer id="footer">
+          <div class="footer-info">
+            <div class="footer-links">
+              <p class="lead">Links</p>
+              <p><a href="#">Location</a></p>
+              <p><a href="#">About Us</a></p>
+              <p><a href="3">Contact Us</a></p>
+            </div>
+            <div class="footer-subscribe">
+              <p class="lead">Be in the know</p>
+              <p>Promotions, new products and sales. Directly to your inbox.</p>
+
+              <div class="subscribe">
+                <form action="">
+                  <input
+                    type="email"
+                    name="email"
+                    placeholder="Your Email..."
+                    class="primary-input"
+                  />
+                  <button type="submit" class="btn btn-primary">
+                    Subscribe
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <p>Copyright &copy; 2020, Monstat</p>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </body>
+</html>
